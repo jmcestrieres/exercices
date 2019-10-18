@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around ;
+}
+h2{
+    background-color: rgba(0, 0, 0, 0.521);
+    color:white;
+    text-align: center;
+    margin-top: 200px;
+        
+}
+
+
+section div {
+    margin:10px;
+}
+
+section div{
+    border: solid 5px grey;
+    background-color: silver;
+}
+
+.australie{
+    width: 25%;
+    height: 250px;
+    background-image: url("paysage_1.webp");
+}
+.chine{
+    width: 25%;
+    height: 250px;
+    background-image: url("paysage_2.webp");
+}
+.usa{
+    width: 35%;
+    height: 250px;
+    background-image: url("paysage_3.webp");
+}
+.desert{
+    width: 25%;
+    height: 250px;
+    background-image: url("paysage_4.webp");
+}
+.turquie{
+    width: 35%;
+    height: 250px;
+    background-image: url("paysage_5.webp");
+}
+.indonesie{
+    width: 20%;
+    height: 250px;
+    background-image: url("paysage_6.webp");
+}
+.maurice{
+    width: 20%;
+    height: 250px;
+    background-image: url("paysage_7.webp");
+}
+.cambodge{
+    width: 20%;
+    height: 250px;
+    background-image: url("paysage_8.webp");
+}
+.croatie{
+    width: 25%;
+    height: 250px;
+    background-image: url("paysage_9.webp");
+}
+.seychelles{
+    width: 25%;
+    height: 250px;
+    background-image: url("paysage_10.webp");
+}
+#container :hover {
+    background-position : center;
+    transition : 2s ease;
+
+}
+
+div{
+    background-repeat: no-repeat;
+    animation: movebg 2s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes movebg{
+    0%{background-position-x: 0px; margin: 0px; }
+    100%{background-position-x: -200px; margin: 10px; }
+}
+
+#container:hover{
+    background-position:left;
+    transition: 2s ease;
+}
+
