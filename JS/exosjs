@@ -1,0 +1,4 @@
+var elmt = document.getElementById("exemple");
+
+elmt.style.color = "black";
+elmt.style.textAlign = "center";
