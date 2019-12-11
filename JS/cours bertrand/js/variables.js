@@ -1,6 +1,16 @@
-maVariable = 'hello je m\'appelle jmc';
-console.log(typeof maVariable);
+//déclaration des variables
+let hello = "Hello";
+let world = "World";
 
-console.log(maVariable);
-console.log("tout va bien");
+//concaténation
+console.log(hello + ", " + world + " !");
+
+//template strings
+let toto = "Toto";//bla bla
+console.log(`je m'apelle ${toto} et tout va bien !`);
+
+
+
+
+
 
