@@ -43,31 +43,4 @@ let tet3 = document.getElementById("h3").addEventListener("click", () => {
     }
     )
 
-    class Info{
-        constructor(nom, type, pays, classement){
-            this.nom = nom
-            this.type = type
-            this.pays = pays
-            this.classement = classement
-            this.afficher()
-        }
-
-
-    function afficherJson(){
-        let xhr = new XMLHttpRequest();
     
-        xhr.open('GET', 'JS/data/menu.json',true);
-        xhr.responseType = 'json';
-    
-        xhr.addEventListener('load', function(){
-            let infosJson = this.response;
-            infosJson.forEach(element => {
-                let info = new Fromage(element.nom, element.type, element.pays, element.classement);
-                // fromage.afficher();Si pas déclaré ds le constructeur avec this.afficher(), obligé de l'appeler ici
-            });
-        });
-        
-        xhr.send();
-    };
-    
-    afficherFromages();
